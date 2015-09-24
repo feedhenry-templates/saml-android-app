@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        displayLoading();
+        displayInit();
     }
 
     private void displayContent(Fragment fragment) {
@@ -21,8 +21,15 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    private void displayLoading() {
+    private void displayInit() {
+        displayContent(new InitFragment());
+    }
+
+    public void displayLoading() {
         displayContent(new LoadingFragment());
     }
 
+    public void displayMainScreen() {
+        displayContent(new MainFragment());
+    }
 }
