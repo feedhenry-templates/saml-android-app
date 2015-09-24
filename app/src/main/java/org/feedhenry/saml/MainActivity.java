@@ -32,4 +32,19 @@ public class MainActivity extends AppCompatActivity {
     public void displayMainScreen() {
         displayContent(new MainFragment());
     }
+
+    public void displayWebView(String ssoStringURL) {
+        Bundle bundle = new Bundle();
+        bundle.putString(WebViewFragment.URL, ssoStringURL);
+
+        Fragment fragment = new WebViewFragment();
+        fragment.setArguments(bundle);
+
+        displayContent(fragment);
+    }
+
+    public void displayUserData() {
+        displayContent(new UserDataFragment());
+    }
+
 }
