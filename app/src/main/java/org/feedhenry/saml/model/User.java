@@ -1,4 +1,4 @@
-package org.feedhenry.saml;
+package org.feedhenry.saml.model;
 
 import java.io.Serializable;
 

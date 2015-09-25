@@ -1,4 +1,4 @@
-package org.feedhenry.saml;
+package org.feedhenry.saml.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,7 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ShowUserDataFragment extends Fragment {
+import org.feedhenry.saml.R;
+import org.feedhenry.saml.model.User;
+
+public class UserDataFragment extends Fragment {
 
     public static final String USER = "USER";
 

@@ -1,4 +1,4 @@
-package org.feedhenry.saml;
+package org.feedhenry.saml.fragments;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import org.feedhenry.saml.SAMLActivity;
+import org.feedhenry.saml.R;
 
 public class WebViewFragment extends Fragment {
 
@@ -31,7 +34,7 @@ public class WebViewFragment extends Fragment {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 // It' logged
                 if (url.endsWith("login/ok")) {
-                    MainActivity activity = (MainActivity) getActivity();
+                    SAMLActivity activity = (SAMLActivity) getActivity();
                     activity.retrieveUserData();
                 }
             }
