@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 public class WebViewFragment extends Fragment {
 
@@ -18,9 +17,9 @@ public class WebViewFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_webview, null);
-
         String ssoStringURL = getArguments().getString(URL);
+
+        View view = inflater.inflate(R.layout.fragment_webview, null);
 
         WebView webView = (WebView) view.findViewById(R.id.ssoWebView);
         webView.getSettings().setUseWideViewPort(true);
@@ -33,7 +32,7 @@ public class WebViewFragment extends Fragment {
                 // It' logged
                 if (url.endsWith("login/ok")) {
                     MainActivity activity = (MainActivity) getActivity();
-                    activity.displayUserData();
+                    activity.retrieveUserData();
                 }
             }
         });

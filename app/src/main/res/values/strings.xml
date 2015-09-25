@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">saml-android-app</string>
+    <string name="communicating_server">Communicating with the server</string>
 </resources>

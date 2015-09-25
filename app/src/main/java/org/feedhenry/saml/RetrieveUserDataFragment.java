@@ -16,18 +16,14 @@ import com.feedhenry.sdk.api.FHCloudRequest;
 
 import org.json.fh.JSONObject;
 
-public class UserDataFragment extends Fragment {
+public class RetrieveUserDataFragment extends Fragment {
 
-    private static final String TAG = UserDataFragment.class.getName();
+    private static final String TAG = RetrieveUserDataFragment.class.getName();
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_user_data, null);
-
-        final MainActivity activity = (MainActivity) getActivity();
-        activity.displayLoading();
-
+        View view = inflater.inflate(R.layout.fragment_loading, null);
 
         try {
 
@@ -38,10 +34,11 @@ public class UserDataFragment extends Fragment {
             request.executeAsync(new FHActCallback() {
                 @Override
                 public void success(FHResponse res) {
-                    Log.d(TAG, res.getErrorMessage(), res.getError());
+                    User user = parseUserData(res.getJson());
+                    Log.d(TAG, user.toString());
 
-                    String ssoStringURL = res.getJson().getString("sso");
-                    activity.displayWebView(ssoStringURL);
+                    MainActivity activity = (MainActivity) getActivity();
+                    activity.displayUserData(user);
                 }
 
                 @Override
@@ -56,4 +53,14 @@ public class UserDataFragment extends Fragment {
 
         return view;
     }
+
+    private User parseUserData(JSONObject json) {
+        User user = new User();
+        user.setFirstName(json.getString("first_name"));
+        user.setLastName(json.getString("last_name"));
+        user.setEmail(json.getString("email"));
+        user.setExpires(json.getString("expires"));
+        return user;
+    }
+
 }

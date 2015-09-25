@@ -54,6 +54,7 @@ public class MainFragment extends Fragment {
                     Log.d(TAG, res.getErrorMessage(), res.getError());
 
                     String ssoStringURL = res.getJson().getString("sso");
+                    Log.d(TAG, "SSO URL = " + ssoStringURL);
                     activity.displayWebView(ssoStringURL);
                 }
 

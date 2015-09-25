@@ -43,8 +43,18 @@ public class MainActivity extends AppCompatActivity {
         displayContent(fragment);
     }
 
-    public void displayUserData() {
-        displayContent(new UserDataFragment());
+    public void retrieveUserData() {
+        displayContent(new RetrieveUserDataFragment());
+    }
+
+    public void displayUserData(User user) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ShowUserDataFragment.USER, user);
+
+        Fragment fragment = new ShowUserDataFragment();
+        fragment.setArguments(bundle);
+
+        displayContent(fragment);
     }
 
 }
