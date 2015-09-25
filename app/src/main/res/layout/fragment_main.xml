@@ -9,7 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,9 +20,11 @@
         android:textAlignment="center" />
 
     <Button
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
         android:id="@+id/signin"
         android:layout_marginTop="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="SignIn"/>
+        android:text="SignIn" />
 </LinearLayout>
