@@ -6,6 +6,15 @@
     android:orientation="vertical"
     android:padding="30dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="Great! You're signed in."/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
