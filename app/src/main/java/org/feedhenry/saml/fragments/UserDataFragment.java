@@ -20,7 +20,7 @@ public class UserDataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         User user = (User) getArguments().getSerializable(USER);
 
-        View view = inflater.inflate(R.layout.fragment_user_data, null);
+        View view = View.inflate(getContext(), R.layout.fragment_user_data, null);
 
         if(user != null) {
 

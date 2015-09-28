@@ -20,7 +20,7 @@ public class MainFragment extends Fragment {
 
         final SAMLActivity activity = (SAMLActivity) getActivity();
 
-        View view = inflater.inflate(R.layout.fragment_main, null);
+        View view = View.inflate(getContext(), R.layout.fragment_main, null);
 
         Button signinButton = (Button) view.findViewById(R.id.signin);
         signinButton.setOnClickListener(new View.OnClickListener() {
