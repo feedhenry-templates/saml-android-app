@@ -13,8 +13,6 @@ import org.feedhenry.saml.SAMLActivity;
 
 public class MainFragment extends Fragment {
 
-    private static final String TAG = MainFragment.class.getName();
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater,

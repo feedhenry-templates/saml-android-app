@@ -11,8 +11,6 @@ import org.feedhenry.saml.R;
 
 public class LoadingFragment extends Fragment {
 
-    private static final String TAG = LoadingFragment.class.getName();
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater,
