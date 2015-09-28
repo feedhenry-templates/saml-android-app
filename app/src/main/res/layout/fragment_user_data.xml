@@ -8,83 +8,39 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="24sp"
         android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/signed_in"
         android:textColor="#000000"
-        android:text="@string/signed_in"/>
+        android:textSize="24sp" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_face_black"
+        android:drawableLeft="@drawable/ic_face_black"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_face_black"
-            android:contentDescription="@string/face_icon_context_description"/>
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:layout_marginBottom="20dp">
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/ic_email_black"
+        android:drawableLeft="@drawable/ic_email_black"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_email_black"
-            android:contentDescription="@string/email_icon_context_description"/>
-
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/session"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_lock_outline_black"
-            android:contentDescription="@string/lock_icon_context_description"/>
-
-        <TextView
-            android:id="@+id/session"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-
+        android:drawableStart="@drawable/ic_lock_outline_black"
+        android:drawableLeft="@drawable/ic_lock_outline_black"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
 </LinearLayout>
