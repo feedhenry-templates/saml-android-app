@@ -136,15 +136,15 @@ public class SAMLActivity extends AppCompatActivity {
                 .commit();
     }
 
-    public void displayLoading() {
+    private void displayLoading() {
         displayContent(new LoadingFragment());
     }
 
-    public void displayMainScreen() {
+    private void displayMainScreen() {
         displayContent(new MainFragment());
     }
 
-    public void displayWebView(String ssoStringURL) {
+    private void displayWebView(String ssoStringURL) {
         Bundle bundle = new Bundle();
         bundle.putString(WebViewFragment.URL, ssoStringURL);
 
@@ -154,7 +154,7 @@ public class SAMLActivity extends AppCompatActivity {
         displayContent(fragment);
     }
 
-    public void displayUserData(User user) {
+    private void displayUserData(User user) {
         Bundle bundle = new Bundle();
         bundle.putSerializable(UserDataFragment.USER, user);
 
