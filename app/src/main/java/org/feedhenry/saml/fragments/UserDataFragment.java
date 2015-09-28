@@ -22,14 +22,18 @@ public class UserDataFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_user_data, null);
 
-        TextView name = (TextView) view.findViewById(R.id.name);
-        name.setText(user.getFirstName() + " "  + user.getLastName());
+        if(user != null) {
 
-        TextView email = (TextView) view.findViewById(R.id.email);
-        email.setText(user.getEmail());
+            TextView name = (TextView) view.findViewById(R.id.name);
+            name.setText(getString(R.string.full_name, user.getFirstName(), user.getLastName()));
 
-        TextView session = (TextView) view.findViewById(R.id.session);
-        session.setText(user.getExpires());
+            TextView email = (TextView) view.findViewById(R.id.email);
+            email.setText(user.getEmail());
+
+            TextView session = (TextView) view.findViewById(R.id.session);
+            session.setText(user.getExpires());
+
+        }
 
         return view;
     }
