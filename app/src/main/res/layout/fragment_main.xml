@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:text="Click the SignIn button below\nto sign in via configured SAML IdP."
-        android:textAlignment="center" />
+        android:gravity="center" />
 
     <Button
         android:background="@color/colorPrimary"
