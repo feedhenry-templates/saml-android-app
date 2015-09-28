@@ -13,7 +13,7 @@
         android:textSize="24sp"
         android:layout_marginBottom="20dp"
         android:textColor="#000000"
-        android:text="Great! You're signed in."/>
+        android:text="@string/signed_in"/>
 
     <LinearLayout
         android:layout_width="match_parent"

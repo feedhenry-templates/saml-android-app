@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:text="Click the SignIn button below\nto sign in via configured SAML IdP."
+        android:text="@string/singin_explain"
         android:gravity="center" />
 
     <Button
@@ -26,5 +26,5 @@
         android:layout_marginTop="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="SignIn" />
+        android:text="@string/signin" />
 </LinearLayout>
