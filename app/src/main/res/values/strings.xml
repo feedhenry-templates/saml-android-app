@@ -4,4 +4,7 @@
     <string name="signin">SignIn</string>
     <string name="singin_explain">Click the SignIn button below\nto sign in via configured SAML IdP.</string>
     <string name="signed_in">Great! You\'re signed in.</string>
+    <string name="face_icon_context_description">Face icon</string>
+    <string name="email_icon_context_description">Email icon</string>
+    <string name="lock_icon_context_description">Lock icon</string>
 </resources>
