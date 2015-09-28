@@ -6,9 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.feedhenry.saml.R;
+import org.feedhenry.saml.SAMLActivity;
 import org.feedhenry.saml.model.User;
 
 public class UserDataFragment extends Fragment {
@@ -21,6 +23,15 @@ public class UserDataFragment extends Fragment {
         User user = (User) getArguments().getSerializable(USER);
 
         View view = View.inflate(getContext(), R.layout.fragment_user_data, null);
+
+        Button siginButton = (Button) view.findViewById(R.id.sigin);
+        siginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SAMLActivity activity = (SAMLActivity) getActivity();
+                activity.retrieveSSOUrl();
+            }
+        });
 
         if(user != null) {
 
