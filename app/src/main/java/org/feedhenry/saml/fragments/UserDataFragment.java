@@ -24,7 +24,7 @@ public class UserDataFragment extends Fragment {
 
         View view = View.inflate(getContext(), R.layout.fragment_user_data, null);
 
-        Button siginButton = (Button) view.findViewById(R.id.sigin);
+        Button siginButton = (Button) view.findViewById(R.id.signin);
         siginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
