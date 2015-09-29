@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="MyTheme.Base" parent="MyTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+</resources>
