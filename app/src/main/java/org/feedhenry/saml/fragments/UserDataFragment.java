@@ -28,7 +28,7 @@ public class UserDataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         User user = (User) getArguments().getSerializable(USER);
 
-        View view = View.inflate(container.getContext(), R.layout.fragment_user_data, null);
+        View view = View.inflate(getActivity(), R.layout.fragment_user_data, null);
 
         Button siginButton = (Button) view.findViewById(R.id.signin);
         siginButton.setOnClickListener(new View.OnClickListener() {
