@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2015 FeedHenry Ltd, All Rights Reserved.
+ *
+ * Please refer to your contract with FeedHenry for the software license agreement.
+ * If you do not have a contract, you do not have a license to use this software.
+ */
 package org.feedhenry.saml.fragments;
 
 import android.os.Bundle;
@@ -20,7 +26,7 @@ public class MainFragment extends Fragment {
 
         final SAMLActivity activity = (SAMLActivity) getActivity();
 
-        View view = View.inflate(getContext(), R.layout.fragment_main, null);
+        View view = View.inflate(getActivity(), R.layout.fragment_main, null);
 
         Button signinButton = (Button) view.findViewById(R.id.signin);
         signinButton.setOnClickListener(new View.OnClickListener() {
