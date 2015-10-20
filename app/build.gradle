@@ -14,7 +14,7 @@ android {
 
     lintOptions {
         abortOnError true
-        disable 'SetJavaScriptEnabled', 'AllowBackup'
+        disable 'OldTargetApi', 'GradleDependency', 'SetJavaScriptEnabled', 'AllowBackup'
     }
 
     buildTypes {
