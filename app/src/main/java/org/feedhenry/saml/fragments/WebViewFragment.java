@@ -22,7 +22,7 @@ public class WebViewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         String ssoStringURL = getArguments().getString(URL);
 
-        View view = View.inflate(getContext(), R.layout.fragment_webview, null);
+        View view = View.inflate(container.getContext(), R.layout.fragment_webview, null);
 
         WebView webView = (WebView) view.findViewById(R.id.ssoWebView);
         webView.getSettings().setUseWideViewPort(true);

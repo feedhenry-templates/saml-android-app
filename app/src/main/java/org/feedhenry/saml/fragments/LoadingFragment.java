@@ -15,7 +15,7 @@ public class LoadingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        return View.inflate(getContext(), R.layout.fragment_loading, null);
+        return View.inflate(container.getContext(), R.layout.fragment_loading, null);
     }
 
 }
