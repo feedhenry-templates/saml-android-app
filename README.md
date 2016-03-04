@@ -22,7 +22,7 @@ If you do not have access to a RHMAP instance, you can sign up for a free instan
 
 You can import this project as a client app inside of RHMAP Studio.  First you will need to create a project based on the  "SAML Example Project" template.  In this project you will add a new client app by importing an existing app.  Select "Native Android" as your app type and import from this git repository. 
 
-### Build instructions for Open Source Development
+### Local Clone (ideal for Open Source Development)
 If you wish to contribute to this template, the following information may be helpful; otherwise, RHMAP and its build facilities are the preferred solution.
 
 ## Build instructions
