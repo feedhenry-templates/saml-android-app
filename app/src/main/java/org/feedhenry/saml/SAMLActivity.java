@@ -125,10 +125,22 @@ public class SAMLActivity extends AppCompatActivity {
                     Log.d(TAG, "FHCloudRequest (valid) - success");
 
                     User user = new User();
-                    user.setFirstName(res.getJson().getString("first_name"));
-                    user.setLastName(res.getJson().getString("last_name"));
-                    user.setEmail(res.getJson().getString("email"));
-                    user.setExpires(res.getJson().getString("expires"));
+
+                    if(res.getJson().has("first_name")) {
+                        user.setFirstName(res.getJson().getString("first_name"));
+                    }
+
+                    if(res.getJson().has("last_name")) {
+                        user.setLastName(res.getJson().getString("last_name"));
+                    }
+
+                    if(res.getJson().has("email")) {
+                        user.setEmail(res.getJson().getString("email"));
+                    }
+
+                    if(res.getJson().has("expires")) {
+                        user.setExpires(res.getJson().getString("expires"));
+                    }
 
                     Log.d(TAG, user.toString());
 
