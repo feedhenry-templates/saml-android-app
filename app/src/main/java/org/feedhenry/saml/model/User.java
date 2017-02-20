@@ -56,6 +56,18 @@ public class User implements Serializable {
         this.expires = expires;
     }
 
+    public String getName() {
+        if(firstName != null && lastName != null) {
+            return firstName + " " + lastName;
+        } else if(firstName != null) {
+            return firstName;
+        } else if(lastName != null) {
+            return lastName;
+        } else {
+            return "";
+        }
+    }
+
     @Override
     public String toString() {
         return "User{" +

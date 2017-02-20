@@ -51,7 +51,7 @@ public class UserDataFragment extends Fragment {
         if(user != null) {
 
             TextView name = (TextView) view.findViewById(R.id.name);
-            name.setText(getString(R.string.full_name, user.getFirstName(), user.getLastName()));
+            name.setText(user.getName());
 
             TextView email = (TextView) view.findViewById(R.id.email);
             email.setText(user.getEmail());
