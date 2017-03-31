@@ -26,19 +26,19 @@ You can import this project as a client app inside of RHMAP Studio.  First you w
 If you wish to contribute to this template, the following information may be helpful; otherwise, RHMAP and its build facilities are the preferred solution.
 
 ## Build instructions
- * Edit [fhconfig.properties](app/src/main/assets/fhconfig.properties) to include the relevant information from RHMAP.  
+ * Edit `app/src/main/assets/fhconfig.properties` to include the relevant information from RHMAP.  
  * Attach running Android Device with API 16+ running  
  * ./gradlew installDebug  
  
 ## How does it work?
 
-This project will use the device's native ID and negotiate a SAML session with the remote server.  The SAML related logic can be viewed in [SAMLActivity](app/src/main/java/org/feedhenry/saml/SAMLActivity.java).
+This project will use the device's native ID and negotiate a SAML session with the remote server.  The SAML related logic can be viewed in `app/src/main/java/org/feedhenry/saml/SAMLActivity.java`
 
 ### Logging in With SAML
 
 In order to log in with SAML, the application retrieve's a SSO URL from the cloud application.  This URL is loaded in a webview which negotiates the SAML session between the IdP and the cloud application.
 
-The relevant block of code may be found in [SAMLActivity](app/src/main/java/org/feedhenry/saml/SAMLActivity.java)
+The relevant block of code may be found in `app/src/main/java/org/feedhenry/saml/SAMLActivity.java`
 ```java
 public void retrieveSSOUrl() {
 
