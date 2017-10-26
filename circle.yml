@@ -3,7 +3,7 @@ machine:
     version: oraclejdk8
   environment:
     ANDROID_SDK: "android-26"
-    BUILD_TOOLS: "26.0.1"
+    BUILD_TOOLS: "26.0.2"
 
 dependencies:
   pre:
