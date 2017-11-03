@@ -46,9 +46,6 @@ license {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-
-    compile 'com.android.support:appcompat-v7:26.0.0'
-    compile 'com.android.support:design:26.0.0'
-    compile 'com.feedhenry:fh-android-sdk:3.3.3'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.feedhenry:fh-android-sdk:4.0.0'
 }
